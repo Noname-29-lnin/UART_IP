@@ -1,0 +1,3 @@
+Reset at time             50000000
+Baud rate signal is HIGH at time          16275000000
+- tb_baud_generator.sv:30: Verilog $finish
