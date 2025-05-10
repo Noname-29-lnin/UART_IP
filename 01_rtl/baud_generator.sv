@@ -12,11 +12,11 @@ module baud_generator #(
     input wire i_rst_n     , // active low reset
     output wire o_stick     // baud rate signal
 );
-reg [SIZE_BAUD - 1 : 0] bdr_count, n_bdr_count; // baud rate counter
+reg [SIZE_BAUD - 1 : 0] bdr_count, n_bdr_count // baud rate counter
 
 assign o_stick = (bdr_count == BAUDRATE_VALUE) ? 1'b1 : 1'b0; // baud rate signal
 
-assign n_bdr_count = (o_stick) ? '0 : (bdr_count + 1); // baud rate counter
+assign n_bdr_count = (o_stick) ? '0 : (bdr_count + 1'b1); // baud rate counter
 always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_divider_baud
     if(~i_rst_n)
         bdr_count <= '0;
