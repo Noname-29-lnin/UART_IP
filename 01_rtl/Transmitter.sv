@@ -128,13 +128,15 @@ localparam [SIZE_STATUS-1:0] IDLE        = 3'b000,
                              //STOP_II     = 3'b101;
 reg [SIZE_STATUS-1:0] state, n_state;
 
-localparam SIZE_INDEX = 3; // 8bits
+localparam SIZE_INDEX = 4; // 8bits
 reg [SIZE_INDEX-1:0] index, n_index; // counter for data bits
+wire w_update_data;
+assign w_update_data = (index == SIZE_DATA-1) ? 1'b1 : 1'b0;
 
-localparam SIZE_COUNT = 5;// 1start bit + 8 data bits + 1 parity bit + 2 stop bits
+localparam SIZE_COUNT = 5;// 1start bit + 8 data bits + 1stop bit
 reg [SIZE_COUNT-1:0] count, n_count; // counter for data bits
 wire w_update_sample;
-assign w_update_sample = (count[4:0] == OVER_SAMPLE-1) ? 1'b1 : 1'b0;
+assign w_update_sample = (count == OVER_SAMPLE-1) ? 1'b1 : 1'b0;
 
 wire w_update_start;
 assign w_update_start = i_tx_en & ~i_fifo_empty; 
@@ -147,36 +149,45 @@ always_comb begin : proc_state
             n_index = '0;
         end
         START: begin
-            if(i_stick) begin
-                n_state = (w_update_sample) ? TRANSMIT : START;
-                n_count = (w_update_sample) ? '0 : count + 1;
-            end else begin
-                n_state = START;
-                n_count = count;
-            end
+            // if(i_stick) begin
+            //     n_state = (w_update_sample) ? TRANSMIT : START;
+            //     n_count = (w_update_sample) ? '0 : count + 1;
+            // end else begin
+            //     n_state = START;
+            //     n_count = count;
+            // end
+            n_state = (w_update_sample) ? TRANSMIT : START;
+            n_count = (w_update_sample) ? '0 : (i_stick ? count + 1'b1 : count);
             n_index = '0;
         end
         TRANSMIT: begin
-            if(i_stick) begin
-                n_state = (w_update_sample) ? TRANSMIT : TRANSMIT;
-                n_count = (w_update_sample) ? '0 : count + 1;
-                n_index = (w_update_sample) ? index + 1 : index;
-            end else begin
-                n_state = TRANSMIT;
-                n_count = count;
-                n_index = index;
-            end
+            // if(i_stick) begin
+            //     n_state = (w_update_sample) ? TRANSMIT : TRANSMIT;
+            //     n_count = (w_update_sample) ? '0 : count + 1;
+            //     n_index = (w_update_sample) ? index + 1 : index;
+            // end else begin
+            //     n_state = TRANSMIT;
+            //     n_count = count;
+            //     n_index = index;
+            // end
+            // n_state = (i_stick) ? ((w_update_sample & w_update_data) ? STOP_I : TRANSMIT) : TRANSMIT;
+            n_state = (w_update_sample & w_update_data) ? STOP_I : TRANSMIT;
+            n_count = (w_update_sample) ? '0 : (i_stick ? count + 1'b1 : count);
+            n_index = (w_update_data) ? index : (w_update_sample ? index + 1'b1 : index);
         end
         STOP_I: begin
-            if(i_stick) begin
-                n_state = (w_update_sample) ? IDLE : STOP_I;
-                n_count = (w_update_sample) ? '0 : count + 1;
-                n_index = index;
-            end else begin
-                n_state = STOP_I;
-                n_count = count;
-                n_index = index;
-            end
+            // if(i_stick) begin
+            //     n_state = (w_update_sample) ? IDLE : STOP_I;
+            //     n_count = (w_update_sample) ? '0 : count + 1;
+            //     n_index = index;
+            // end else begin
+            //     n_state = STOP_I;
+            //     n_count = count;
+            //     n_index = index;
+            // end
+            n_state = (w_update_sample) ? IDLE : STOP_I;
+            n_count = (w_update_sample) ? '0 : (i_stick ? count + 1'b1 : count);
+            n_index = index;
         end
         default: begin
             n_state = IDLE;
@@ -206,22 +217,31 @@ always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_tx_out
         case(state)
             IDLE : begin 
                 o_tx_serial <= 1'b1; // idle state is HIGH
-                w_tx_done <= 1'b0;
             end
             START: begin
                 o_tx_serial <= 1'b0; // start bit is LOW
-                w_tx_done <= 1'b0;
             end
             TRANSMIT: begin
-                o_tx_serial <= i_tx_data[index]; // data bits
-                w_tx_done <= 1'b0;
+                o_tx_serial <= i_tx_data[index[SIZE_INDEX-2:0]]; // data bits
             end
             STOP_I: begin
                 o_tx_serial <= 1'b1; // stop bit I
-                w_tx_done <= 1'b1;
             end
             default: begin
                 o_tx_serial <= 1'b1; // idle state is HIGH
+            end
+        endcase
+    end
+end
+always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_tx_done
+    if(~i_rst_n) begin
+        w_tx_done <= 1'b0;
+    end else begin
+        case(state)
+            STOP_I: begin
+                w_tx_done <= ((state==STOP_I) && (n_state==IDLE)) ? 1'b1 : 1'b0; // stop bit I
+            end
+            default: begin
                 w_tx_done <= 1'b0;
             end
         endcase
