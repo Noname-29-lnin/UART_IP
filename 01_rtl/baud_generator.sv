@@ -12,7 +12,7 @@ module baud_generator #(
     input wire i_rst_n     , // active low reset
     output wire o_stick     // baud rate signal
 );
-reg [SIZE_BAUD - 1 : 0] bdr_count, n_bdr_count // baud rate counter
+reg [SIZE_BAUD - 1 : 0] bdr_count, n_bdr_count; // baud rate counter
 
 assign o_stick = (bdr_count == BAUDRATE_VALUE) ? 1'b1 : 1'b0; // baud rate signal
 

@@ -29,6 +29,7 @@ baud_generator #(
 );
 wire w_fifo_empty, w_fifo_full;
 wire [SIZE_DATA-1:0] w_tx_data;
+
 fifo #(
     .SIZE_DATA  (SIZE_DATA), // data size
     .SIZE_DEPTH (16)         // FIFO depth

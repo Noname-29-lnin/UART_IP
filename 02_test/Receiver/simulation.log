@@ -1,0 +1,29 @@
+Start at time           2000000000
+Reset at time           2000000000
+------------ Start Frame ------------
+At time first:           2000000000, w_idata = 0, w_odata = 00000000, w_rx_done = 0
+At time final:          98790000000, w_idata = 0, w_odata = 00000000, w_rx_done = 0
+------------ Data Frame ------------
+At time first:          98790000000, w_idata = 1, w_odata = 00000000, w_rx_done = 0
+At time final:         196590000000, w_idata = 1, w_odata = 00000000, w_rx_done = 0
+At time first:         196590000000, w_idata = 0, w_odata = 00000000, w_rx_done = 0
+At time final:         294390000000, w_idata = 0, w_odata = 00000000, w_rx_done = 0
+At time first:         294390000000, w_idata = 1, w_odata = 00000000, w_rx_done = 0
+At time final:         392190000000, w_idata = 1, w_odata = 00000000, w_rx_done = 0
+At time first:         392190000000, w_idata = 0, w_odata = 00000000, w_rx_done = 0
+At time final:         489990000000, w_idata = 0, w_odata = 00000000, w_rx_done = 0
+At time first:         489990000000, w_idata = 1, w_odata = 00000000, w_rx_done = 0
+At time final:         587790000000, w_idata = 1, w_odata = 00000000, w_rx_done = 0
+At time first:         587790000000, w_idata = 0, w_odata = 00000000, w_rx_done = 0
+At time final:         685590000000, w_idata = 0, w_odata = 00000000, w_rx_done = 0
+At time first:         685590000000, w_idata = 1, w_odata = 00000000, w_rx_done = 0
+At time final:         783390000000, w_idata = 1, w_odata = 00000000, w_rx_done = 0
+At time first:         783390000000, w_idata = 0, w_odata = 00000000, w_rx_done = 0
+At time final:         881190000000, w_idata = 0, w_odata = 00000000, w_rx_done = 0
+------------ Stop Frame ------------
+At time first:         881190000000, w_idata = 1, w_odata = 00000000, w_rx_done = 0
+At time final:         978990000000, w_idata = 1, w_odata = 00000000, w_rx_done = 0
+------------ End Frame ------------
+At time        1076790000000, w_idata = 01010101, w_odata = 01010101, w_rx_done = 0
+Finish Frame at time        1077790000000
+- tb_Receiver.sv:110: Verilog $finish
