@@ -1,2 +1,0 @@
-# UART_IP_TLUL
- UART_IP_and_TLUL

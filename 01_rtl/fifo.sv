@@ -63,7 +63,7 @@ always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_fifo_read
             o_data <= o_data; // keep data in FIFO    
         end
     end
-    
 end
 
 endmodule
+

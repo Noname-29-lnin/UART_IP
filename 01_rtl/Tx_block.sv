@@ -61,3 +61,4 @@ assign o_fifo_empty = w_fifo_empty;
 assign o_fifo_full  = w_fifo_full;
 
 endmodule
+

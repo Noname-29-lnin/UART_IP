@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Jun 17 22:30:39 2025
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : fifo
+Top-level Entity Name : fifo
+Family : Cyclone 10 LP
+Device : 10CL120ZF484I8G
+Timing Models : Final
+Total logic elements : 28 / 119,088 ( < 1 % )
+    Total combinational functions : 26 / 119,088 ( < 1 % )
+    Dedicated logic registers : 10 / 119,088 ( < 1 % )
+Total registers : 10
+Total pins : 22 / 278 ( 8 % )
+Total virtual pins : 0
+Total memory bits : 128 / 3,981,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 576 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

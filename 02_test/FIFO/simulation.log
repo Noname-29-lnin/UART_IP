@@ -51,24 +51,24 @@ Time=          2525000000 	| i_data= 30 	| FIFO[         11]= 11 	|  ptr_rd=4 	|
 Time=          2575000000 	| i_data= 30 	| FIFO[         12]= 12 	|  ptr_rd=5 	| ptr_wr=0 	| o_full=0 	| o_empty=0 	|
 Time=          2625000000 	| i_data= 30 	| FIFO[         13]= 13 	|  ptr_rd=6 	| ptr_wr=0 	| o_full=0 	| o_empty=0 	|
 Time=          2675000000 	| i_data= 30 	| FIFO[         14]= 14 	|  ptr_rd=7 	| ptr_wr=0 	| o_full=0 	| o_empty=0 	|
-Time=          2725000000 	| i_data= 30 	| FIFO[         15]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
-Time=          2775000000 	| i_data= 30 	| FIFO[         16]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
-Time=          2825000000 	| i_data= 30 	| FIFO[         17]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
-Time=          2875000000 	| i_data= 30 	| FIFO[         18]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
-Time=          2925000000 	| i_data= 30 	| FIFO[         19]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
-Time=          2975000000 	| i_data= 30 	| FIFO[         20]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
-Time=          3025000000 	| i_data= 30 	| FIFO[         21]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
-Time=          3075000000 	| i_data= 30 	| FIFO[         22]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
-Time=          3125000000 	| i_data= 30 	| FIFO[         23]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
-Time=          3175000000 	| i_data= 30 	| FIFO[         24]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
-Time=          3225000000 	| i_data= 30 	| FIFO[         25]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
-Time=          3275000000 	| i_data= 30 	| FIFO[         26]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
-Time=          3325000000 	| i_data= 30 	| FIFO[         27]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
-Time=          3375000000 	| i_data= 30 	| FIFO[         28]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
-Time=          3425000000 	| i_data= 30 	| FIFO[         29]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
-Time=          3475000000 	| i_data= 30 	| FIFO[         30]= 15 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          2725000000 	| i_data= 30 	| FIFO[         15]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          2775000000 	| i_data= 30 	| FIFO[         16]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          2825000000 	| i_data= 30 	| FIFO[         17]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          2875000000 	| i_data= 30 	| FIFO[         18]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          2925000000 	| i_data= 30 	| FIFO[         19]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          2975000000 	| i_data= 30 	| FIFO[         20]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          3025000000 	| i_data= 30 	| FIFO[         21]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          3075000000 	| i_data= 30 	| FIFO[         22]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          3125000000 	| i_data= 30 	| FIFO[         23]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          3175000000 	| i_data= 30 	| FIFO[         24]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          3225000000 	| i_data= 30 	| FIFO[         25]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          3275000000 	| i_data= 30 	| FIFO[         26]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          3325000000 	| i_data= 30 	| FIFO[         27]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          3375000000 	| i_data= 30 	| FIFO[         28]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          3425000000 	| i_data= 30 	| FIFO[         29]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
+Time=          3475000000 	| i_data= 30 	| FIFO[         30]=  0 	|  ptr_rd=0 	| ptr_wr=0 	| o_full=0 	| o_empty=1 	|
 Test case 4: FIFO read and write operation
-Time=          3525000000 	| i_data=  0 	| FIFO[          0]= 15 	|  ptr_rd=0 	| ptr_wr=1 	| o_full=0 	| o_empty=0 	|
+Time=          3525000000 	| i_data=  0 	| FIFO[          0]=  0 	|  ptr_rd=0 	| ptr_wr=1 	| o_full=0 	| o_empty=0 	|
 Time=          3575000000 	| i_data=  1 	| FIFO[          0]=  0 	|  ptr_rd=1 	| ptr_wr=2 	| o_full=0 	| o_empty=0 	|
 Time=          3625000000 	| i_data=  2 	| FIFO[          1]=  1 	|  ptr_rd=2 	| ptr_wr=3 	| o_full=0 	| o_empty=0 	|
 Time=          3675000000 	| i_data=  3 	| FIFO[          2]=  2 	|  ptr_rd=3 	| ptr_wr=4 	| o_full=0 	| o_empty=0 	|
@@ -100,4 +100,4 @@ Time=          4925000000 	| i_data= 28 	| FIFO[         27]= 27 	|  ptr_rd=4 	|
 Time=          4975000000 	| i_data= 29 	| FIFO[         28]= 28 	|  ptr_rd=5 	| ptr_wr=6 	| o_full=0 	| o_empty=0 	|
 Time=          5025000000 	| i_data= 30 	| FIFO[         29]= 29 	|  ptr_rd=6 	| ptr_wr=7 	| o_full=0 	| o_empty=0 	|
 Time=          5075000000 	| i_data= 31 	| FIFO[         30]= 30 	|  ptr_rd=7 	| ptr_wr=0 	| o_full=0 	| o_empty=0 	|
-- tb_fifo.sv:114: Verilog $finish
+- tb_fifo.sv:113: Verilog $finish

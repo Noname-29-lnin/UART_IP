@@ -19,14 +19,13 @@ module tb_fifo;
        ) uut (
          .i_clk          (w_clk),        // clock for CPU
          .i_rst_n        (w_rst_n),      // active low reset
-         .i_wr_en        (w_wr_en),      // Enable write
-         .i_rd_en        (w_rd_en),      // Enable read
+         .i_en_wr        (w_wr_en),      // Enable write
+         .i_en_rd        (w_rd_en),      // Enable read
          .i_data         (w_idata),      // data to be sent
          .o_data         (w_odata),      // data received
          .o_fifo_full    (w_fifo_full),  // FIFO full signal
          .o_fifo_empty   (w_fifo_empty)  // FIFO empty signal
        );
-
   initial
   begin
     $dumpfile("tb_fifo.vcd");
