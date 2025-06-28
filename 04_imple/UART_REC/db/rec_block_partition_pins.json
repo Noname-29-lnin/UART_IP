@@ -1,0 +1,101 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "o_done_rx",
+					"strict" : false
+				},
+				{
+					"name" : "o_error_frame",
+					"strict" : false
+				},
+				{
+					"name" : "o_error_parity",
+					"strict" : false
+				},
+				{
+					"name" : "i_en_rd",
+					"strict" : false
+				},
+				{
+					"name" : "i_parity_bit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_parity_bit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_clk",
+					"strict" : false
+				},
+				{
+					"name" : "i_rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "i_stop_bit",
+					"strict" : false
+				},
+				{
+					"name" : "i_data",
+					"strict" : false
+				},
+				{
+					"name" : "i_size_frame[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_size_frame[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_size_frame[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_rx_en",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

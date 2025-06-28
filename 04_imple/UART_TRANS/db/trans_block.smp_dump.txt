@@ -1,0 +1,10 @@
+
+State Machine - |trans_block|trans:trans_unit|state
+Name state.STATE_DONE state.STATE_STOP_2 state.STATE_STOP_1 state.STATE_PARITY state.STATE_TRANS state.STATE_START state.STATE_IDLE 
+state.STATE_IDLE 0 0 0 0 0 0 0 
+state.STATE_START 0 0 0 0 0 1 1 
+state.STATE_TRANS 0 0 0 0 1 0 1 
+state.STATE_PARITY 0 0 0 1 0 0 1 
+state.STATE_STOP_1 0 0 1 0 0 0 1 
+state.STATE_STOP_2 0 1 0 0 0 0 1 
+state.STATE_DONE 1 0 0 0 0 0 1 

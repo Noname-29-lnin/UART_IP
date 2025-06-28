@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Jun 28 20:11:56 2025
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : trans_block
+Top-level Entity Name : trans_block
+Family : Cyclone 10 LP
+Total logic elements : 115
+    Total combinational functions : 115
+    Dedicated logic registers : 69
+Total registers : 69
+Total pins : 45
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

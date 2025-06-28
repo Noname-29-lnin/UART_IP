@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Jun 28 20:17:13 2025
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : rec_block
+Top-level Entity Name : rec_block
+Family : Cyclone 10 LP
+Total logic elements : 172
+    Total combinational functions : 163
+    Dedicated logic registers : 73
+Total registers : 73
+Total pins : 25
+Total virtual pins : 0
+Total memory bits : 144
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -19,7 +19,7 @@ run:
 
 sim:
 	@echo "-> Opening waveform viewer..."
-	@gtkwave tb_$(TOPMODULE).vcd
+	@gtkwave tb_$(TOPMODULE).vcd &>/dev/null
 
 check:
 	@echo "-> Check syntax..."

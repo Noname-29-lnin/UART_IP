@@ -1,7 +1,6 @@
 module rec_block #(
     parameter SIZE_DATA     = 9 ,
-    parameter OVER_SAMPLING = 16,
-	 parameter SIZE_BAUD	    = 24
+    parameter OVER_SAMPLING = 16
 )(
     input logic                     i_clk   ,
     input logic                     i_rst_n ,

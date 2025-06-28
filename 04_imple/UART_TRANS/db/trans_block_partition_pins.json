@@ -1,0 +1,153 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_data_tx",
+					"strict" : false
+				},
+				{
+					"name" : "o_done_tx",
+					"strict" : false
+				},
+				{
+					"name" : "i_parity_bit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_parity_bit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_clk",
+					"strict" : false
+				},
+				{
+					"name" : "i_rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "i_stop_bit",
+					"strict" : false
+				},
+				{
+					"name" : "i_size_frame[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_size_frame[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_size_frame[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_tx_en",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[4]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[5]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[6]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[7]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[8]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[9]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[10]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[11]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[12]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[13]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[14]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[15]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[16]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[17]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[18]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[19]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[20]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[21]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[22]",
+					"strict" : false
+				},
+				{
+					"name" : "i_baud_value[23]",
+					"strict" : false
+				},
+				{
+					"name" : "i_en_wr",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

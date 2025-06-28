@@ -29,7 +29,7 @@ trans #(
     .i_parity_bit           (i_parity_bit),
     .i_stop_bit             (i_stop_bit),
     .i_data                 (w_data),
-    .o_data_tx              (o_data_tx),
+    .o_data_tx              (o_done_tx),
     .o_done_tx              (o_done_tx)
 );
 logic [SIZE_DATA-1:0] w_data;
